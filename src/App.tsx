@@ -16,7 +16,6 @@ function App() {
       const fileText = await extractTextFromFile(file);
 
       const API_KEY = process.env.NEXT_PUBLIC_GEMINI_API_KEY;
-      // const API_KEY ='AIzaSyAub8jCc5tBWrcEIQtL3qHGzogJSxz1mkI';
    
       const response = await fetch(
        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`,
